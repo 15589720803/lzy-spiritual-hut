@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title>三碗的数据小屋</title>
+    <title>三碗的每日数据</title>
     <style>
         body {
             background-color: black;
@@ -16,19 +16,44 @@
             color: #ff66cc;
             border-bottom: 1px solid #ff66cc;
         }
-        .data-entry {
-            margin-bottom: 1rem;
+        .day {
+            margin-top: 2rem;
+            border-top: 1px dashed #336633;
+            padding-top: 1rem;
         }
         .date {
             color: #ffaa00;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        .data-line {
+            margin: 0.3rem 0;
+        }
+        .label {
+            color: #88ff88;
+        }
+        .note {
+            color: #aaaaaa;
+            font-style: italic;
+            margin-top: 0.5rem;
         }
     </style>
 </head>
 <body>
-    <h1>🧠 三碗的每日数据</h1>
-    <p>这里是我的赛博数据存档。</p>
-    <div class="data-entry">
-        <span class="date">2025-05-03</span> : 腐化值 62f / 燃烧值 45b / 神性 有
+    <h1>🧠 三碗的赛博数据</h1>
+    <p>每日记录 · 简版公开</p>
+
+    <!-- 每日数据块示例：复制下面整个 .day 块，修改日期和数值 -->
+    <div class="day">
+        <div class="date">2026-05-04</div>
+        <div class="data-line"><span class="label">天气</span> : 晴 / 日照 120min</div>
+        <div class="data-line"><span class="label">体重</span> : 65 kg / 静息心率 68 bpm</div>
+        <div class="data-line"><span class="label">睡眠</span> : 7.2h / 正念 15min</div>
+        <div class="data-line"><span class="label">活动</span> : 咖啡因 200mg / 剪辑 90min</div>
+        <div class="data-line"><span class="label">自评</span> : 腐化值 62f / 燃烧值 45b / 神性 有</div>
+        <div class="data-line"><span class="label">瓣鳞花</span> : 2次/分钟</div>
     </div>
+
+    <!-- 可以继续添加新的 .day 块，旧的保留，新的加在最上面或最下面都可以 -->
 </body>
 </html>
